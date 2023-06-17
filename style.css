@@ -1,4 +1,10 @@
-
+:root {
+	--prim: #8800ff;
+	--primacc: #7a00e6;
+	--primaaa: #b866ff;
+	--sec: #6d00cc;
+	--secacc: #5f00b3;
+}
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -127,7 +133,7 @@ section {
 }
 
 .btn-regular {
-	background-color: #0095f7;
+	background-color: var(--prim);
 	color: #ffffff;
 	padding: 10px 25px;
 	letter-spacing: .1em;
@@ -136,13 +142,13 @@ section {
 }
 
 .btn-regular:hover {
-	background-color: #0191f0;
+	background-color: var(--primacc);
 	color: #ffffff;
 }
 
 .btn-demo {
 	color: #ffffff;
-	background-color: #6772e5;
+	background-color: var(--sec);
 	letter-spacing: .1em;
 	padding: 15px 48px;
 	display: inline-block;
@@ -152,17 +158,17 @@ section {
 
 .btn-demo:hover {
 	color: #ffffff;
-	background-color: #636ee1;
+	background-color: var(--secacc);
 }
 
 .btn-demo-small {
 	font-size: 12px;
-	background-color: #6772e5;
+	background-color: var(--sec);
 	padding: 1px 4px;
 }
 
 .btn-demo-small:hover {
-	background-color: #636ee1;
+	background-color: var(--secacc);
 }
 
 .btn-demo-small a {
@@ -171,7 +177,7 @@ section {
 
 .btn-buy {
 	color: #ffffff;
-	background-color: #0095f7;
+	background-color: var(--prim);
 	letter-spacing: .1em;
 	padding: 15px 48px;
 	display: inline-block;
@@ -180,7 +186,7 @@ section {
 }
 
 .btn-buy:hover {
-	background-color: #0191f0;
+	background-color: var(--primacc);
 	color: #ffffff;
 }
 
@@ -207,7 +213,7 @@ section {
 
 #hero span {
 	font-weight: 400;
-    color: #0095f7;
+    color: var(--prim);
     text-transform: uppercase;
     letter-spacing: .05em;
 }
@@ -226,7 +232,7 @@ section {
 
 #marketing span {
 	font-weight: 400;
-	color: #0095f7;
+	color: var(--prim);
 	text-transform: uppercase;
 	letter-spacing: .05em;
 }
@@ -284,7 +290,7 @@ section {
 }
 
 .rating {
-	background-color: #0095f7;
+	background-color: #8800ff;
 	padding: 2px 12px;
 	border-radius: 50px;
 }
@@ -301,6 +307,10 @@ section {
 
 .review-one {
   background-image: url('images/profile-picture-one.jpg');
+}
+
+.review-two {
+  background-image: url('images/profile-picture-two.png');
 }
 
 .personal-info {
@@ -325,13 +335,13 @@ section {
 	font-size: 22px;
 	font-weight: 300;
 	letter-spacing: .1em;
-	color: #0095f7;
+	color: #8800ff;
 }
 
 .pricing-box h6 {
 	font-size: 60px;
 	font-weight: 700;
-	color: #3a3f52;
+	color: #8800ff;
 	margin-bottom: 0px;
 }
 
@@ -364,12 +374,12 @@ section {
 
 .pricing-box i {
 	font-size: 20px;
-	color: #0095f7;
+	color: var(--prim);
 	margin-right: 10px;
 }
 
 .pricing-box .demo {
-	color: #6772e5!important;
+	color: var(--primaaa) !important;
 }
 
 /* ==============================================
@@ -401,7 +411,7 @@ section {
 
 #call-to-action .btn-regular {
 	background-color: #ffffff!important;
-	color: #0095f7!important;
+	color: var(--prim) !important;
 	padding: 15px 45px;
 }
 
@@ -447,7 +457,7 @@ footer a {
 }
 
 footer a:hover {
-	color: #0095f7;
+	color: var(--primacc);
 	text-decoration: none;
 }
 
@@ -458,7 +468,7 @@ footer i {
 }
 
 footer i:hover {
-	color: #0095f7;
+	color: var(--primacc);
 }
 
 footer small {
@@ -467,7 +477,7 @@ footer small {
 }
 
 .external-links {
-	color: #0095f7;
+	color: var(--prim);
 }
 
 /* ==============================================
@@ -653,4 +663,14 @@ footer small {
 		margin-top: 4px;
 		margin-left: 10px;
 	}
+}
+
+ion-icon {
+	color: rgb(105, 154, 229);
+	font-size: 20px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+.ban {
+	color: #808080;
 }
