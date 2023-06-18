@@ -4,6 +4,8 @@
 	--primaaa: #b866ff;
 	--sec: #6d00cc;
 	--secacc: #5f00b3;
+	--primary-color: #edf2fc;
+	--secondary-color: #212121;
 }
 
 body {
@@ -45,6 +47,16 @@ b {
 section {
 	padding: 100px 0px;
 }
+
+#icon{
+	width: 35px;
+	cursor: pointer;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 9999;
+}
+
 
 .title-block {
 	max-width: 700px;
