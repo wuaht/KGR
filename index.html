@@ -3,7 +3,7 @@
   <head>
 
     <!-- Rest deiner Website-Inhalte -->
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -68,9 +68,9 @@
         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
           <img src="images/iphone.gif" class="img-fluid" >
         </div>
-        <div class="col-md-7 content-box hero-content">
+        <div class="col-md-7 content-box hero-content" >
           <span>Willkommen bei KGR</span>
-          <h1><b>Nr. 1 Dienstleistungservice</b> für deine Erfordernisse</h1>
+          <h1><b><span class="auto-type"></span></b> für deine Erfordernisse</h1>
           <p>lol</p>
           <a href="info/index.html" class="btn btn-regular">Mehr erfahren</a>
         </div>
@@ -91,7 +91,7 @@
             <a href="#" class="btn btn-regular">Warum?</a>
           </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" data-aos-offset="50">
             <img src="images/demo-image.gif" class="img-fluid" alt="ern st">
         </div>
       </div>
@@ -238,7 +238,11 @@
         <a href="#" class="btn btn-regular">ich werde missbraucht</a>
       </div>
     </div>
+    <div class="wave1"></div>
+    <div class="wave2"></div>
+    <div class="wave3"></div>
   </section>
+  
   <!-- E N D  C A L L  T O  A C T I O N -->
 
 
@@ -317,6 +321,28 @@
          document.getElementById("icon").src = "images/moon.png"
        }
      }
+    </script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Nr. 1 Dienstleistungsservice"],
+        typeSpeed: 55,
+        backSpeed: 40,
+        loop: true
+      })
+
     </script>
   </body>
 </html>

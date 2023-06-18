@@ -198,11 +198,14 @@ section {
 	letter-spacing: .1em;
 	margin-top: 25px;
 	display: inline-block;
+	
+	transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .btn-regular:hover {
 	background-color: var(--primacc);
 	color: #ffffff;
+	transform: translateY(-10px);
 }
 
 .btn-demo {
@@ -270,7 +273,7 @@ section {
     padding: 0px;
 }
 
-#hero span {
+#hero span:not(.auto-type) {
 	font-weight: 400;
     color: var(--primtext);
     text-transform: uppercase;
@@ -446,10 +449,11 @@ section {
 ===============================================*/
 
 #call-to-action {
-	background-image: url('images/call-to-action.png');
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: rgb(136, 14, 245);
+    display: flex;
 	height: 100%;
+	flex-direction: column;
+	position: relative;
 }
 
 #call-to-action h2 {
@@ -477,6 +481,66 @@ section {
 #call-to-action .title-block {
 	margin-bottom: 0px;
 }
+
+#call-to-action, .wave1 {
+
+
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#call-to-action .container {
+	position: relative;
+	z-index: 2;
+}
+
+.wave1 {
+    background-color: #a432f4;
+    flex: 1;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+
+    animation: wave1 4s ease-in-out infinite;
+}
+.wave2 {
+    background-color: #ae44f5;
+    flex: 1;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+
+    animation: wave1 4s ease-in-out infinite;
+}
+.wave3 {
+    background-color: #b753f6;
+    flex: 1;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+
+    animation: wave1 4s ease-in-out infinite;
+}
+
+@keyframes wave1 {
+    0%,100%{
+		clip-path: polygon(0% 58%, 8% 51%, 18% 46%, 31% 45%, 40% 49%, 49% 53%, 58% 57%, 68% 59%, 80% 60%, 90% 58%, 100% 56%, 100% 100%, 0% 100%);
+
+
+    }
+    50%{
+		clip-path: polygon(0 58%, 10% 62%, 21% 65%, 30% 65%, 40% 65%, 50% 63%, 58% 54%, 68% 50%, 78% 48%, 89% 43%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+
 
 /* ==============================================
    9. Footer
@@ -626,14 +690,14 @@ footer small {
 	}
 
 	.btn-demo-small {
-		background-color: var(--navbar);
+		background-color: var(--prim);
 		border: 0px;
 		padding: 0px;
 		box-shadow: none;
 
 	}
 	.btn-demo-small:hover {
-		background-color: var(--navbar);
+		background-color: var(--primacc);
 		border: 0px;
 		padding: 0px;
 		box-shadow: none;
