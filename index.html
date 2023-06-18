@@ -311,6 +311,11 @@
      function toggleDarkmode() {
        var element = document.body;
        element.classList.toggle("darkmode");
+       if (document.getElementById("icon").src.includes("moon")) {
+         document.getElementById("icon").src = "images/sun.png";
+       } else {
+         document.getElementById("icon").src = "images/moon.png"
+       }
      }
     </script>
   </body>
